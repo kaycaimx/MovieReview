@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  margin: 5px;
+}
+
+.appTitle {
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  color: navajowhite;
+}
+
+.appHeader {
+  width: 100%;
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+
+.menu {
+  width: 100%;
+  border: 1px solid pink;
+  margin-top: 5px;
+}
+
+.menu-list {
+  list-style: none;
+  display: block;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  font-size: 16px;
+}
+
+.menu-list li {
+  display: inline-block;
+  margin-right: 24px;
+  color: navajowhite;
+  
+}
+
+.exit-button {
+  background-color: orange;
+}
+
+/* Mobile Styles */
+@media (max-width: 549px) {
+  /* Adjust the breakpoint value (768px) as needed for your design */
+  
+  /* ... Mobile styles ... */
+
+  /* Adjust menu list styles for mobile */
+
+  .appHeader {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: teal;
+  }
+
+  .menu-list li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+  }
+
+  .menu-list li .exit-button {
+    margin-bottom: 5px;
+  }
+
+  .menu-list a {
+    font-size: medium;
+    display: flex;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: beige;
+  }
+
+}
+
+/* Tablet Style */
+@media (min-width: 550px) {
+
+  /* Adjust menu list styles for tablet */
+  .appHeader {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+  }
+
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .menu-list li {
+    margin-right: 20px;
+    list-style: none;
+    font-size: 25px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list a {
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    color: #333;
+  }
+
+}
